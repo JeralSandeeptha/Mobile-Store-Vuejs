@@ -8,6 +8,9 @@ import WishlistPage from "../views/wishlist-page/WishlistPage.vue";
 import ProfilePage from "../views/profile-page/ProfilePage.vue";
 import ProductsPage from "../views/products-page/ProductsPage.vue";
 import ProductDetailsPage from "../views/product-details-page/ProductDetailsPage.vue";
+import LoginPage from "../views/login-page/LoginPage.vue";
+import RegisterPage from "../views/register-page/RegisterPage.vue";
+import ForgotPasswordPage from "../views/forgot-passsword-page/ForgotPasswordPage.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +19,21 @@ const router = createRouter({
             name: 'home',
             path: '/',
             component: HomePage
+        },
+        {
+            name: 'login',
+            path: '/login',
+            component: LoginPage
+        },
+        {
+            name: 'register',
+            path: '/register',
+            component: RegisterPage
+        },
+        {
+            name: 'forgot-password',
+            path: '/forgot-password',
+            component: ForgotPasswordPage
         },
         {
             name: 'about',
